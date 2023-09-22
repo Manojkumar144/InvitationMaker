@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Text to Image</title>
+    <link rel="stylesheet" href="invitationStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<body>
+       <div class="invitation-container">
+        <img class="invitation-image" src="Invitation.png" alt="Invitation Image">
+        <div class="invitation-text">
+            <h3>SAVE THE DATE</h3>
+            <p class="head">The Wedding of</p>
+            <p><span id="bride-details" class="bride-groom-details"> Cahaya Devi</span></p>
+             <p id="separator">&</p>
+            <p><span id="groom-details" class="bride-groom-details" >William</span></p>
+            <div class="date-time">
+            <span id="date-details" >Monday | <span id="time-details">19 june, 2022 | At 4pm</span></span>        
+            <br>
+            <p class="address">123 anywhere st., <br>any city,st 12345</p>
+           </div>
+        </div>
+    </div>
+    <script>
+     const brideName = localStorage.getItem("brideName");
+    const groomName = localStorage.getItem("groomName");
+    const eventDate = localStorage.getItem("eventDate");
+    const eventDay = localStorage.getItem("eventDay");
+    const eventTime = localStorage.getItem("eventTime");
+    const eventAddress = localStorage.getItem("eventAddress");
+
+    // Update the content in invitation.html
+    document.getElementById("groom-details").textContent = groomName;
+    document.getElementById("bride-details").textContent = brideName;
+    document.getElementById("date-details").textContent = `${eventDay} | ${eventDate} | At ${eventTime}`;
+    document.querySelector(".address").innerHTML = `${eventAddress.replace(/\n/g, "<br>")}`;  
+    </script>
+</body>
+</html>

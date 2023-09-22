@@ -1,0 +1,56 @@
+.user-input {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: lightblue;
+    background: transparent;
+    border :2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(40px);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#updateButton {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;  
+    justify-content: center;
+    margin: auto;
+}
+
+button#updateButton:hover {
+    background-color: #0056b3;
+}
+body
+{
+ background: url('img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+input
+{
+    background-color: transparent;
+    color:white;
+    width: 98%;
+    outline: none;
+}

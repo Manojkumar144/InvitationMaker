@@ -1,0 +1,49 @@
+.invitation-image
+{
+    position: relative;
+    width: 400px;
+    height:auto;
+}
+
+.invitation-text
+{
+  position: absolute;
+  top:40px;
+  color: white;
+  margin-left:125px;
+    margin-top:30px
+}
+
+.head
+{
+   margin-left:20px;
+}
+
+.bride-groom-details
+{
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    margin-left:-20px;
+    
+}
+#separator
+{
+    font-family: 'Italianno', cursive;   
+    font-size: 50px;
+    margin-top: -20px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+}
+
+#date-details
+{
+    margin-left:-30px;
+}
+.date-time{
+    margin-top: 20px;
+}
+
+.address{
+    margin-top: 30px;
+}
+

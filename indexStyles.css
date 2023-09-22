@@ -1,0 +1,29 @@
+h1
+{
+    font-size: 80px;
+    font-family: 'Pacifico', cursive;
+    color:#f550c4;
+    text-align: center;
+    margin-top:100px;
+}
+
+#createButton
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f550c4;
+}
+
+body
+{
+ background: url('img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#createButton:hover {
+    background-color: #9D44C0;
+}
